@@ -5,8 +5,8 @@ function WeatherDisplay({weatherData}){
     return(
         <>
         <div>
-            <h2 style={{color:a}}>Current Temperature : {weatherData.temperature}°C</h2>
-            <h3>Conditions : {weatherData.conditions}</h3>
+            <p style={{color:a}}>Current Temperature : {weatherData.temperature}°C</p>
+            <p>Conditions : {weatherData.conditions}</p>
         </div>
         </>
     )
