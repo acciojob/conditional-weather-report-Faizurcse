@@ -1,15 +1,15 @@
-import React from "react"
-function WeatherDisplay({weatherData}){
-    
-    const a = weatherData.temperature>20?'red':'blue'
-    return(
-        <>
-        <span>
-            <p style={{color:a}}>Current Temperature : {weatherData.temperature}°C</p>
-            <p>Conditions : {weatherData.conditions}</p>
-        </span>
-        </>
-    )
+import React from "react";
+
+function WeatherDisplay({ weatherData }) {
+  const { temperature, conditions } = weatherData;
+  const temperatureColor = temperature > 20 ? 'red' : 'blue';
+
+  return (
+    <span>
+      <p style={{ color: temperatureColor }}>Temperature: {temperature}°C</p>
+      <p>Conditions: {conditions}</p>
+    </span>
+  );
 }
 
-export default  WeatherDisplay
+export default WeatherDisplay;
