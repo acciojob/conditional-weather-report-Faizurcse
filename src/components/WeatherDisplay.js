@@ -4,6 +4,8 @@ function WeatherDisplay({ weatherData }) {
   const { temperature, conditions } = weatherData;
   const temperatureColor = temperature > 20 ? 'rgb(255, 0, 0)' : 'blue';
 
+  console.log(temperatureColor)
+
   return (
     <span>
       <p style={{ color: temperatureColor }}>Temperature: {temperature}</p>
